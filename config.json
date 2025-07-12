@@ -1,0 +1,6 @@
+{
+  "RemoteIP": "1.2.3.4",
+  "RemotePort": "443",
+  "LocalPort": "1080",
+  "Password": "SuperSecretPassword"
+}
