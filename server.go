@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-  port := "443" // پیش‌فرض
+  port := "443" // default
   if len(os.Args) > 1 {
     port = os.Args[1]
   }
@@ -38,7 +38,7 @@ func main() {
 }
 
 func handle(c net.Conn) {
-  target, err := net.Dial("tcp", "127.0.0.1:22") // مقصد داخلی، قابل تغییر
+  target, err := net.Dial("tcp", "127.0.0.1:22") // local, changab
   if err != nil {
     c.Close()
     return
